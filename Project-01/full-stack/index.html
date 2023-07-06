@@ -1,40 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"></script>
-  </head>
-  <body>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
     <div class="container">
-      <form id="form" class="form">
         <h2>Sign Up</h2>
-        <div class="form-control">
-          <label for="username">User Name</label>
-          <input type="text" id="username" placeholder="Enter usename" />
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="email">Email</label>
-          <input type="text" id="email" placeholder="Enter Email" />
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-            <label for="">Password</label>
-           <input type="password" id="password" placeholder="Enter password">
-           <small>Error message</small>
-    
-           </div>
-           <div class="form-control">
-            <label for="c-password">Confrim Password</label>
-           <input type="password" id="c-password" placeholder="Confirm Password">
-           <small>Error message</small>
-    
-           </div>
-           <button>Submit</button>
-      </form>
+        <form action="" class="form" id="form">
+            <div class="form-control error">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Username" id="username">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control ">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" id="email">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" id="password">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="c-password">Confirm Password</label>
+                <input type="password " placeholder="Confirm Password" id="c-password">
+                <small>Error Message</small>
+            </div>
+            <button>Submit</button>
+        </form>
     </div>
-  </body>
+</body>
 </html>
