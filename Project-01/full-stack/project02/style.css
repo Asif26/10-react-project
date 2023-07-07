@@ -1,114 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 
-* {
+*{
     box-sizing: border-box;
 }
 
-body{
+body {
+    background-color: #274472;
     display: flex;
     flex-direction: column;
-    background-color: slategray;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: 'lato', sans-serif;
-    margin: 0;
+    font-family: 'Lato', sans-serif;
     color: white;
+    
+
 }
 
 .movie-container {
-    margin: 20px 0; 
+    margin: 20px ;
+    
 }
-
-.movie-container select {
+ .movie-container select {
     background-color: white;
     border: 0;
-    border-radius:5px;
-    font-size: 14px;
-    margin-left: 10px;
+    border-radius: 5px;
+    margin: 5px;
     padding: 5px 15px 5px 15px;
+    font-size: 14px;
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-}
-.seat {
-     background-color: darkgrey;
-     height: 12px;
-     width: 15px;
-     margin: 4px;
-     border-top-left-radius: 10px ;
-     border-top-right-radius: 10px;
+ }
 
-}
+ .seat {
+    background-color: lightslategray;
+    height: 15px;
+    width: 15px;
+    margin: 3px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+    
+ }
 
-.row { 
+ .row {
     display: flex;
-}
-.seat.selected {
+ }
+
+
+ .seat.selected {
     background-color: aqua;
-}
+ }
 
+ .seat.occupied {
+ background-color:slateblue;
+ }
 
-.seat.occupied {
-    background-color: white;
-}
-
-
-.seat:nth-of-type(2) {
-margin-right: 20px;    
-}
-
-.seat:nth-last-of-type(2) {
+ .seat:nth-last-of-type(2){
     margin-left: 20px;
-}
+ }
+ .seat:nth-of-type(2) {
+    margin-right: 20px;
+ }
 
-.seat:not(.occupied):hover {
+ .seat:not(.occupied):hover{
     cursor: pointer;
     transform: scale(1.4);
-
-}
-
-.legend .seat:not(.occupied):hover {
-    cursor:  default;
+ }
+ .showcase .seat:not(.occupied):hover{
+    cursor: default;
     transform: scale(1);
-}
+ }
 
-.legend {
-    background-color: rgba(0, 0 , 0, 0.3);
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: lightgray;
+ .showcase {
+    background-color: rgba(0, 0, 0, .3);
+    padding: 10px;
     list-style: none;
+    color: lightgray;
     display: flex;
+    border-radius: 5px;
     justify-content: space-between;
-}
+ }
 
-.legend li {
+ .showcase li {
     display: flex;
-    align-items: center;
     margin: 0 10px;
-}
-.legend li small {
-    margin-left: 3px;
-}
+    align-items: center;
+ }
+ .showcase li small {
+    margin-left:  3px;
+ }
 
-.screen {
+ .screen {
     background-color: white;
     height: 70px;
     width: 100%;
-    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.7);
     transform: rotateX(-45deg);
+ }
 
-}
-
-.container {
-    perspective:  900px;
-}
-
-p.text span {
-    color: aqua;
-}
-p.text {
- margin: 5px 0;
-}
+ .container {
+    perspective: 900px;
+ }

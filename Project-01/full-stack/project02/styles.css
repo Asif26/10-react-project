@@ -67,7 +67,7 @@ body{
     transform: scale(1.4);
 }
 
-.legend .seat:not(.occupied):hover{
+.legend.seat:not(.occupied):hover{
     cursor: default;
     transform: scale(1);
 }
