@@ -104,3 +104,12 @@ body {
  .container {
     perspective: 900px;
  }
+ p.text {
+    margin: 5px 0;
+
+}
+
+p.text span {
+    color:aqua;
+
+}
